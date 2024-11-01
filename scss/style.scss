@@ -1,0 +1,100 @@
+@import "./mixins";
+@import "./variables";
+@import "./mediaquery";
+
+nav{
+    @include nav();
+
+    @include mediaQuery(767px){
+        @include nav-m;
+    }
+    @include mediaQuery(1024px, 767px){
+        @include nav-i;
+    }
+}
+
+.popOut{
+    display: none;
+
+    @include mediaQuery(767px){
+        @include popOut;
+    }
+}
+
+.hero{
+    @include hero();
+
+    @include mediaQuery(767px){
+        @include hero-m;
+    }
+
+    @include mediaQuery(1024px, 767px){
+        @include hero-i;
+    }
+}
+
+.about{
+    @include about();
+
+    @include mediaQuery(767px){
+        @include about-m;
+    }
+    @include mediaQuery(1024px, 767px){
+        @include about-i;
+    }
+}
+
+.attend{
+    @include attend();
+
+    @include mediaQuery(767px){
+        @include attend-m;
+    }
+    @include mediaQuery(1024px, 767px){
+        @include attend-i;
+    }
+}
+
+// * 
+.bestideas-section{
+    @include bestideas-section;
+    @include mediaQuery(1024px, 768px){
+        @include bestideas-ipad;
+    }
+    @include mediaQuery(767px){
+        @include bestideas-mobile;
+    };
+}
+.testimonial-section{
+    @include testimos;
+    @include mediaQuery(1024px, 768px){
+        @include testimos-ipad;
+    }
+    @include mediaQuery(767px){
+        @include testimos-mobile;
+    };
+}
+.overlay-section{
+    @include overlay-section;
+    @include mediaQuery(767px){
+        @include overlay-mobile;
+    };
+}
+.blog-section{
+    @include blog-section;
+    @include mediaQuery(1024px, 768px){
+        @include blog-section-ipad;
+    }
+    @include mediaQuery(767px){
+        @include blog-mobile;
+    };
+}
+footer{
+    @include footer;
+    @include mediaQuery(1024px, 768px){
+        @include footer-ipad;
+    }
+    @include mediaQuery(767px){
+        @include footer-mobile;
+    };
+}
