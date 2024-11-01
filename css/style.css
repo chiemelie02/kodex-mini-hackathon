@@ -369,7 +369,6 @@ nav .burger > i {
 @media screen and (max-width: 767px) {
   .about {
     padding-inline: 20px;
-    background-color: brown;
   }
   .about .aboutFlex {
     -webkit-box-orient: vertical;
