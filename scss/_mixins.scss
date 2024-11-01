@@ -350,6 +350,7 @@
 
 @mixin about-m{
     padding-inline: $inlinepad-m;
+    background-color: brown;
 
     .aboutFlex{
         flex-direction: column;
@@ -368,10 +369,15 @@
                 font-size: 14px;
             }
         }
-
-        .image{
+    }
+    .image{
+        width: 100%;
+        margin-top: 30px;
+        background-color: aqua;
+        display: block;
+        height: 250px;
+        .img5{
             width: 100%;
-            margin-top: 30px;
         }
     }
 }

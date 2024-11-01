@@ -369,6 +369,7 @@ nav .burger > i {
 @media screen and (max-width: 767px) {
   .about {
     padding-inline: 20px;
+    background-color: brown;
   }
   .about .aboutFlex {
     -webkit-box-orient: vertical;
@@ -388,9 +389,15 @@ nav .burger > i {
     width: 100%;
     font-size: 14px;
   }
-  .about .aboutFlex .image {
+  .about .image {
     width: 100%;
     margin-top: 30px;
+    background-color: aqua;
+    display: block;
+    height: 250px;
+  }
+  .about .image .img5 {
+    width: 100%;
   }
 }
 @media screen and (max-width: 1024px) and (min-width: 767px) {
